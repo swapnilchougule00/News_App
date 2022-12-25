@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.nav>button{
+  border: none;
+outline: none;
+padding: 5px;
+font-size: 1.3rem;
+font-weight: 500;
+}
+button:hover{
+  background-color: rgb(138, 137, 137);
+  color: white !important;
+  border-radius: 5px;
+}
+.mid{
+    color: red !important;
+}
+.header {
+  box-shadow: 0px 1px 10px rgb(123, 121, 121);
+}
+
+.nav > h3 {
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media only screen and (max-width : 750px) {
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav > h3 {
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+   }
