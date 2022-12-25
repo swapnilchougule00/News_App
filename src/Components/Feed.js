@@ -76,7 +76,7 @@ return(
      
             <div className="main" key={i}>
               <div className='card'>
-                <img className='img' src={urlToImage} alt='#' />
+                <img className='img' crossorigin="anonymous" src={urlToImage} alt='#' />
                 <div className="info">
                   <div className="title">{title.slice(0 , 30)}</div>
                   <p className="content">{content.slice(0,400)}</p>
@@ -107,7 +107,7 @@ return(
      
             <div className="main" key={i}>
               <div className= 'card-list'>
-                <img className='img-list' src={urlToImage} alt='#' />
+                <img className='img-list' crossorigin="anonymous" src={urlToImage} alt='#' />
                 <div className="info">
                   <div className="title">{title.slice(0 , 30)}</div>
                   <p className="content">{content.slice(0,400)}</p>
