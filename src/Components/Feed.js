@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import "../index.css";
 import Loding from "./Loding";
-import { BsMoonStars } from "react-icons/bs";
-import { MdViewList } from "react-icons/bs";
 
 
 function Feed({show}) {
@@ -78,7 +76,7 @@ return(
      
             <div className="main" key={i}>
               <div className='card'>
-                <img className='img' src={urlToImage} />
+                <img className='img' src={urlToImage} alt='#' />
                 <div className="info">
                   <div className="title">{title.slice(0 , 30)}</div>
                   <p className="content">{content.slice(0,400)}</p>
@@ -109,7 +107,7 @@ return(
      
             <div className="main" key={i}>
               <div className= 'card-list'>
-                <img className='img-list' src={urlToImage} />
+                <img className='img-list' src={urlToImage} alt='#' />
                 <div className="info">
                   <div className="title">{title.slice(0 , 30)}</div>
                   <p className="content">{content.slice(0,400)}</p>

@@ -1,7 +1,6 @@
 import Header from './Components/Header'
 import Feed from './Components/Feed'
 import { useState } from 'react'
-import Loding from './Components/Loding'
 
 function App() {
 
