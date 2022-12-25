@@ -68,7 +68,7 @@ return(
       </div>
       
         {
-          news.map((value,i)=>{
+          news?.map((value,i)=>{
             const { urlToImage, title, url, content, publishedAt } =
             value;
            
@@ -99,7 +99,7 @@ return(
       </div>
       
         {
-          news.map((value,i)=>{
+          news?.map((value,i)=>{
             const { urlToImage, title, url, content, publishedAt } =
             value;
            
