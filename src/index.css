@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .dark{
-  background-color: black !important;
+  background-color: rgb(37, 32, 32) !important;
   color: white !important;
 }
 .light{
