@@ -21,8 +21,7 @@ function Feed({show}) {
   }
 
 
-  const url =
-    "https://newsapi.org/v2/everything?q=apple&from=2022-12-21&to=2022-12-21&sortBy=popularity&apiKey=2c8fb0a3f0f84e1f8d937471d7ba6328";
+  const url = 'https://gnews.io/api/v4/search?q=example&token=b92623d90c22a6c3c0420a01c2a37600&lang=en'
 
 
     const FetchNews = async () => {
@@ -30,7 +29,7 @@ function Feed({show}) {
       try{
         const response = await fetch(url);
         const data = await response.json();
-      // console.log(data.articles);
+      console.log(data.articles);
       setLoding(false)
         setNews(data.articles);
       }
@@ -69,14 +68,14 @@ return(
       
         {
           news?.map((value,i)=>{
-            const { urlToImage, title, url, content, publishedAt } =
+            const { image, title, url, content, publishedAt } =
             value;
            
           return(
      
             <div className="main" key={i}>
               <div className='card'>
-                <img className='img' crossorigin="anonymous" src={urlToImage} alt='#' />
+                <img className='img' src={image}  alt={title.slice(0 ,15)} />
                 <div className="info">
                   <div className="title">{title.slice(0 , 30)}</div>
                   <p className="content">{content.slice(0,400)}</p>
@@ -100,14 +99,14 @@ return(
       
         {
           news?.map((value,i)=>{
-            const { urlToImage, title, url, content, publishedAt } =
+            const { image, title, url, content, publishedAt } =
             value;
            
           return(
      
             <div className="main" key={i}>
               <div className= 'card-list'>
-                <img className='img-list' crossorigin="anonymous" src={urlToImage} alt='#' />
+                <img className='img-list' src={image} alt={title.slice(0 ,15)}/>
                 <div className="info">
                   <div className="title">{title.slice(0 , 30)}</div>
                   <p className="content">{content.slice(0,400)}</p>
