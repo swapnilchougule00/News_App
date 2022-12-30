@@ -58,7 +58,7 @@ function Feed({show}) {
 
   if(loding){
 return(
-  <Loding/>
+  <Loding show ={show}/>
 )
   }
 
